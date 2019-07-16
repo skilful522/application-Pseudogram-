@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudogram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="fullWidth">
+        <div id="appName">Pseudogram</div>
+        <div>
+            <input name="search" id="search" placeholder="search" type="text">
+            <label for="search"></label>
+        </div>
+        <button id="login">Login</button>
+    </nav>
+</header>
+<main>
+    <dialog>
+        <button id="close"></button>
+        <label>Введите ваше имя</label>
+        <input type="text" id="userLogin">
+        <label>Введите ваш пароль</label>
+        <input type="password" id="userPassword">
+        <button id="loginButton">Войти</button>
+    </dialog>
+    <section>
+        <div id="photoAndInfoBlock">
+        <div id="pageInfo">
+        <h3 id="user-name">Stanislav Sergienya <button id="follow">Follow</button> </h3>
+        <span>6 posts</span> |
+        <span>222 followers</span> |
+        <span>398 following</span>
+            <hr>
+            <div id="user-Buttons">
+            <button id="posts">Posts</button>
+            <button id="tagged">Tagged</button>
+            </div>
+        </div>
+        <div id="user-photo-block"><img id="user-photo" src="https://pp.userapi.com/c639227/v639227527/50bf8/-j6oft2E-bw.jpg?ava=1" alt="user-photo"></div>
+        </div>
+    </section>
+    <section class="fullWidth">
+        <article id="images" class="fullWidth">
+            <img class="img" src="https://source.unsplash.com/640x640/weekly?ocean" alt="photo">
+            <img class="img" src="https://source.unsplash.com/640x640/weekly?water" alt="photo">
+            <img class="img" src="https://source.unsplash.com/640x640/weekly?sea" alt="photo">
+            <img class="img" src="https://source.unsplash.com/640x640/weekly?fire" alt="photo">
+            <img class="img" src="https://source.unsplash.com/640x640/weekly?vulcano" alt="photo">
+            <img class="img" src="https://source.unsplash.com/640x640/weekly?magma" alt="photo">
+        </article>
+    </section>
+</main>
+<footer class="fullWidth">
+    (c) Pseudogram
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

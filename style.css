@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background: aliceblue;
+    position: relative;
+}
+
+#appName {
+    background: yellow;
+    padding-left: 10px;
+    border-style: hidden;
+    border-radius: 30px;
+    align-content: center;
+    font-size: 1.4em;
+    color: red;
+    font-family: "Magic Wix Script RUS";
+}
+
+span {
+    cursor: default;
+}
+
+label {
+    font-size: 1.1em;
+    font-family: "Comic Sans MS";
+}
+
+#user-photo-block{
+    width: max-content;
+    padding-left: 225px;
+}
+
+button{
+    outline-style: none;
+    background: yellow;
+    cursor: pointer;
+    border-style: hidden;
+    color: sienna;
+    border-radius: 30px;
+    align-content: center;
+    font-size: 1.2em;
+    font-family: "Comic Sans MS";
+}
+
+#pageInfo {
+    float: right;
+    margin-right: 150px;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+#user-Buttons {
+    height:auto;
+    float: right;
+    display:inline-block;
+}
+#photoAndInfoBlock {
+    overflow: hidden;
+}
+
+main > section > #user-Buttons {
+    display: block;
+    text-align: center;
+    display-flex: right;
+    width: 200px;
+}
+
+main > section > #pageInfo {
+    display: block;
+    text-align: center;
+    display-flex: right;
+    width: 200px;
+}
+#user-photo-block > span{
+    border: 2px solid black;
+    width: max-content;
+    font-family: "Comic Sans MS", serif;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+#login{
+    width: 50px;
+    height: 30px;
+    color: snow;
+    cursor: pointer;
+    background: orange;
+    border-radius: 30px;
+    outline-style: none;
+}
+#login:hover{
+    width: 55px;
+    height: 30px;
+    cursor: pointer;
+    background: orange;
+    border-radius: 30px;
+    outline-style: none;
+    box-shadow: 0 0 0 2px rgba(0 0 0 0.5);
+}
+
+header, footer {
+    background: snow;
+}
+
+header > nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > image {
+    cursor: pointer;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+main {
+    padding-bottom: 24px;
+}
+
+#user-name {
+    text-align: center;
+    cursor: default;
+}
+
+#user-info {
+    font-family: "Comic Sans MS", serif;
+    text-align: end;
+    border: 2px solid black;
+    width: max-content;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#images > img {
+    width: calc(100% / 3);
+}
+
+dialog{
+    border-radius: 20px;
+    width: max-content;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    background: yellow;
+}
+#userLogin, #userPassword{
+    border-radius: 20px;
+    padding: 10px;
+    width: 75px;
+    outline: none !important;
+}
+
+#show{
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: orange;
+}
+
+#loginButton{
+    border-style: hidden;
+    border-radius: 20px;
+    width: 175px;
+}
+
+#close {
+    height: 25px;
+    width: 25px;
+    background: url("data:image/jpeg;base64,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") center;
+    position: absolute;
+    border-style: hidden;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+footer {
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
